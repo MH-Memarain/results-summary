@@ -186,4 +186,7 @@ body {
     .card{
         flex-direction: column;
     }
+    .result-container{
+        max-width: 100%;
+    }
 }
