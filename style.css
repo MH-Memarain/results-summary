@@ -1,143 +1,167 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
+
 @font-face {
     font-family: 'HankenGrotesk-Bold';
-    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);        
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);
 }
+
 @font-face {
     font-family: 'HankenGrotesk-ExtraBold';
     src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
 }
+
 @font-face {
     font-family: 'HankenGrotesk-Medium';
     src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
 }
-.card{
+
+.card {
     display: flex;
-    flex-direction: row;    
-    min-width: 375px;        
-    width: 600px;            
+    flex-direction: row;
+    min-width: 375px;
+    width: 600px;
 }
+
 /*
     left panel style
 */
-.result-container{
-    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(234, 85%, 45%));    
-    flex-grow: 1;    
+.result-container {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+    flex-grow: 1;
     display: grid;
     grid-template-rows: auto auto auto auto auto;
     grid-row-gap: 20px;
     border-radius: 20px;
-    z-index: 2;        
+    z-index: 2;
 }
-.left-header-text{
+
+.left-header-text {
     text-align: center;
-    color :hsl(241, 100%, 89%);
+    color: hsl(241, 100%, 89%);
     font-weight: 700;
     font-family: 'HankenGrotesk-Medium';
 }
-.left-cercyle-result{
+
+.left-cercyle-result {
     border-radius: 100%;
     width: 150px;
     height: 150px;
-    background-image: linear-gradient(hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'HankenGrotesk-ExtraBold';    
+    font-family: 'HankenGrotesk-ExtraBold';
 }
-.result-number-cercyle{
+
+.result-number-cercyle {
     color: white;
     font-size: 50px;
 
 }
-.result-text-cercyle{
+
+.result-text-cercyle {
     font-size: small;
-    color :hsl(241, 100%, 89%);
+    color: hsl(241, 100%, 89%);
 }
-.result-bottom-text{
+
+.result-bottom-text {
     font-family: 'HankenGrotesk-ExtraBold';
     color: white;
     text-align: center;
 }
-.result-subtitle-text{
-    color :hsl(241, 100%, 89%);
+
+.result-subtitle-text {
+    color: hsl(241, 100%, 89%);
     text-align: center;
     font-family: 'HankenGrotesk-Medium';
 }
+
 /* 
     right panel style 
 */
-.summery-container{
-    background-color:hsl(0, 0%, 100%);
-    box-shadow: 5px 20px 30px 10px  hsl(221, 100%, 96%);          
+.summery-container {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 20px 30px 10px hsl(221, 100%, 96%);
     border-radius: 0px 20px 20px 0px;
     flex-grow: 1;
     display: grid;
-    grid-template-rows:  0fr 2fr 11fr 1fr 2fr 1fr;
-    row-gap: 5px;    
+    grid-template-rows: 0fr 2fr 11fr 1fr 2fr 1fr;
+    row-gap: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    z-index: 1;        
+    z-index: 1;
 }
-.summery-header-text{
+
+.summery-header-text {
     font-family: 'HankenGrotesk-ExtraBold';
     font-size: 20px;
     color: hsl(224, 30%, 27%);
 }
-.summery-itmes{
+
+.summery-itmes {
     display: flex;
-    flex-direction: column;  
-    justify-content: space-around;  
+    flex-direction: column;
+    justify-content: space-around;
 }
-.summery-item{
+
+.summery-item {
     display: flex;
-    flex-direction: row;     
-    padding: 15px 0px 15px 15px;  
+    flex-direction: row;
+    padding: 15px 0px 15px 15px;
     border-radius: 10px;
     width: 100%;
     font-family: 'HankenGrotesk-Medium';
 }
-.itme-number{
-    text-align: right;    
+
+.itme-number {
+    text-align: right;
     flex-grow: 2;
-    padding-right: 12px;   
-    color :hsl(241, 100%, 89%);
+    padding-right: 12px;
+    color: hsl(241, 100%, 89%);
 }
-.item-text{
+
+.item-text {
     padding-left: 5px;
 }
-.item-number-pass{
+
+.item-number-pass {
     color: hsl(224, 30%, 27%);
 }
-#Reaction{
-    background-color: hsla(360, 65%,85%, 35%);
+
+#Reaction {
+    background-color: hsla(360, 65%, 85%, 35%);
     color: hsl(0, 100%, 67%);
 }
-#Memory{
-    background-color: hsla(40, 65%,85%, 35%);
+
+#Memory {
+    background-color: hsla(40, 65%, 85%, 35%);
     color: hsl(39, 100%, 56%);
 }
-#Verbal{
-    background-color: hsla(160, 65%,85%, 35%);
+
+#Verbal {
+    background-color: hsla(160, 65%, 85%, 35%);
     color: hsl(166, 100%, 37%);
 }
-#Visual{    
-    background-color: hsla(230, 65%,85%, 35%);
-    color:  hsl(234, 85%, 45%);
+
+#Visual {
+    background-color: hsla(230, 65%, 85%, 35%);
+    color: hsl(234, 85%, 45%);
 }
-.summery-button{
+
+.summery-button {
     width: 100%;
     padding: 15px 0px;
     border-radius: 30px;
@@ -146,13 +170,17 @@ body{
     color: white;
     font-family: 'HankenGrotesk-ExtraBold';
 }
-.summery-button:hover{    
-    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(234, 85%, 45%));    
+
+.summery-button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
     cursor: pointer;
 }
+
 /* 
     media query for mobile
 */
-@media screen {
-    
+@media screen and (max-width: 460px) {
+    .card{
+        flex-direction: column;
+    }
 }
