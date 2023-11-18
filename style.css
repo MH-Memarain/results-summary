@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+@font-face {
+    font-family: 'HankenGrotesk-Bold';
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf);        
+}
+@font-face {
+    font-family: 'HankenGrotesk-ExtraBold';
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'HankenGrotesk-Medium';
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+.card{
+    display: flex;
+    flex-direction: row;    
+    min-width: 375px;        
+    width: 600px;
+}
+.result-container{
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(234, 85%, 45%));    
+    flex-grow: 1;    
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 20px;
+    border-radius: 20px;
+}
+.summery-container{
+    background-color:hsl(0, 0%, 100%);
+    box-shadow: 5px 20px 30px 10px  hsl(221, 100%, 96%);          
+    border-radius: 0px 20px 20px 0px;
+    flex-grow: 1;
+}
+.left-header-text{
+    text-align: center;
+    color :hsl(241, 100%, 89%);
+    font-weight: 700;
+    font-family: 'HankenGrotesk-Medium';
+}
+.left-cercyle-result{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'HankenGrotesk-ExtraBold';    
+}
+.result-number-cercyle{
+    color: white;
+    font-size: 50px;
+
+}
+.result-text-cercyle{
+    font-size: small;
+    color :hsl(241, 100%, 89%);
+}
+.result-bottom-text{
+    font-family: 'HankenGrotesk-ExtraBold';
+    color: white;
+    text-align: center;
+}
+.result-subtitle-text{
+    color :hsl(241, 100%, 89%);
+    text-align: center;
+    font-family: 'HankenGrotesk-Medium';
+}
